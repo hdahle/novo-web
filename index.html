@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/w3-custom-colors.css">
-<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald:300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400&display=swap"
+  rel="stylesheet">
 <!-- Font Awesome -->
 <script src="https://kit.fontawesome.com/2acb89f8cb.js" crossorigin="anonymous"></script>
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
@@ -18,10 +20,16 @@
   h4,
   h5,
   h6 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-display: swap;
+    font-weight: 300;
     background-color: transparent;
-    /* color: #ddd;*/
+  }
+
+  .novohead {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    background-color: transparent;
   }
 
   /* body text light grey, extra line spacing */
@@ -40,16 +48,16 @@
   }
 
   a:hover {
-    background-color: #ccc;
+    background-color: #5989b6;
   }
 </style>
 
 
-<body class="w3-theme-d1">
+<body class="w3-theme-d2">
 
   <!-- Menu -->
-  <div class="w3-top" id="top-menu-bar">
-    <div class="w3-bar w3-theme">
+  <div class="w3-top novohead" id="top-menu-bar">
+    <div class="w3-bar w3-theme-d2">
       <div class="w3-content" style="max-width:900px">
         <a href="#Top" class="w3-bar-item w3-button">NovoTech</a>
         <a href="#About" class="w3-bar-item w3-button w3-hide-small w3-right">About</a>
@@ -62,7 +70,8 @@
   </div>
 
   <!-- Menu (responsive) -->
-  <div id="burger" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-theme w3-top" style="margin-top:38px">
+  <div id="burger" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-theme-d2 w3-top novohead"
+    style="margin-top:38px">
     <a href="#About" class="w3-bar-item w3-button" onClick="clickBurger()">About</a>
     <a href="#Technology" class="w3-bar-item w3-button" onClick="clickBurger()">Technology</a>
     <a href="#Contact" class="w3-bar-item w3-button" onClick="clickBurger()">Contact</a>
@@ -71,74 +80,111 @@
   <!-- The content is limited in width using 'w3-content' -->
   <!-- Default width of w3-content is 960px -->
 
-  <div class="w3-content w3-margin-top" style="max-width:900px">
+  <div class="w3-content w3-padding-48" style="max-width:900px">
 
-    <!-- Section: NovoTech -->
+    <!-- 3D demo -->
 
-    <div class="w3-row-padding" id="About">
-      <div class="w3-third w3-container w3-padding-16">
-        <h3>NovoTech</h3>
-      </div>
-      <div class="w3-rest w3-container w3-padding-16">
-        NovoTech is a technology leader in 3D visualization.
-        Our unique technology allows engineering firms to share their advanced 3D-models with employees, customers and
-        business partners,
-        dramatically increasing the value of existing 3D models during the development of large projects.
+    <div class="w3-row w3-padding-24">
+      <div class="w3-rest">
+        <iframe id="novorender" src="https://staging.novorender.com/explorer/2a8be585bdcd4d5194d727b7814cc86a"
+          style="width:100vw;height:30vw;border:none;"></iframe>
+
       </div>
     </div>
 
+    <!-- Section: NovoTech -->
+
+    <div class="w3-row w3-padding-24" id="About">
+      <div class="w3-third w3-container">
+        <h2>NovoTech</h2>
+      </div>
+      <div class="w3-rest w3-container">
+        NovoTech is a technology leader in 3D visualization.
+        Our unique cloud-based software allows engineering firms to share their advanced 3D-models with employees,
+        customers and business partners.
+        This will dramatically increase the value of existing 3D models during the development of large projects.
+
+      </div>
+    </div>
+
+    <!-- How it works -->
+
+    <div class="w3-row w3-padding-24" id="About">
+      <div class="w3-third w3-container">
+        <h2>How it works</h2>
+      </div>
+      <div class="w3-rest w3-container w3-mobile">
+        <iframe src="https://player.vimeo.com/video/265731978?title=0&byline=0&portrait=0" width="640" height="360"
+          frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+
     <!-- Section: Technologies -->
 
-    <div class="w3-row-padding" id="Technology">
-      <div class="w3-third w3-container w3-padding-16">
-        <h3>Technology</h3>
+    <div class="w3-row w3-padding-24" id="Technology">
+      <div class="w3-third w3-container">
+        <h2>Technology</h2>
       </div>
-      <div class="w3-rest w3-container w3-padding-16">
+      <div class="w3-rest w3-container">
         <p>
           The NovoRender cloud makes is possible to use and visialize endless amounts of 3D data.
           By splitting large models into small chunks and stremaing them on an as-needed basis,
           any 3D model can be visualized on any device with a web-browser.
           No plugins or downloads are required.</p>
         <p>
-          <img src="pic-desktop.jpg" alt="NovoTech in use on the desktop" style="width:100%;" />
+          <img src="img/pic-desktop.jpg" alt="NovoTech in use on the desktop" style="width:100%;" />
         </p>
       </div>
     </div>
 
     <!-- Section: Contact -->
 
-    <div class="w3-row-padding" id="Contact">
-      <div class="w3-third w3-container w3-padding-16">
-        <h3>Contact</h3>
+    <div class="w3-row w3-padding-24" id="Contact">
+      <div class="w3-third w3-container">
+        <h2>Contact</h2>
       </div>
-      <div class="w3-rest w3-container w3-padding-16">
-        <p><i class="far fa-envelope w3-hover-opacity"></i>&nbsp;
-          info@novotech.no
+      <div class="w3-rest w3-container">
+        <p>
+          <a href="mailto:info@novotech.no">
+            <i class="far fa-envelope w3-hover-opacity"></i>&nbsp;&nbsp;
+            info@novotech.no
+          </a>
         </p>
-        <p><i class="fas fa-phone w3-hover-opacity"></i>&nbsp;
-          +47 48280270
+        <p>
+          <a href="tel: +4748280270">
+            <i class="fas fa-phone w3-hover-opacity"></i>&nbsp;&nbsp;
+            +47 48280270
+          </a>
         </p>
-        <p><i class="fas fa-map-marker-alt w3-hover-opacity"></i>&nbsp;
-          <a href="https://goo.gl/maps/w33r3ebej3tbH2cK7">Gamle Forusveien 11, 4033 Stavanger, Norway</a>
+        <p>
+          <a href="https://goo.gl/maps/w33r3ebej3tbH2cK7">
+            <i class="fas fa-map-marker-alt w3-hover-opacity"></i>&nbsp;&nbsp;
+            Gamle Forusveien 11, 4033 Stavanger, Norway
+          </a>
+        </p>
+        <p><a href="https://www.facebook.com/NovoTechAS/" target="_blank" rel="noreferrer">
+            <i class="fab fa-facebook-square"></i>&nbsp;&nbsp;
+            NovoTechAS
+          </a>
+        </p>
+        <p><a href="https://www.linkedin.com/company/novotechas/" target="_blank" rel="noreferrer">
+            <i class="fab fa-linkedin w3-hover-opacity"></i>&nbsp;&nbsp;
+            NovoTechAS
+          </a>
         </p>
       </div>
     </div>
   </div>
 
-  <!-- Footer with social media icons and credits -->
+  <!-- Footer -->
 
-  <footer class="w3-center w3-padding">
-    <div class="w3-large w3-section">
-      <i class="fab fa-facebook-square"></i>
-      &nbsp;
-      <i class="fab fa-linkedin w3-hover-opacity"></i>
+  <footer class="w3-center">
+    <div class="w3-center w3-padding">
+      &copy; Copyright 2020 NovoTech AS
     </div>
-    <p>
-      <div class="w3-center w3-padding" style="font-weight:100;">
-        copyright NovoTech AS
-      </div>
   </footer>
-
 
   <!-- BURGER MENU -->
 
