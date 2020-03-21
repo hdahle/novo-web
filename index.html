@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/w3-custom-colors.css">
 <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,7 +18,7 @@
     font-family: 'Oswald', sans-serif;
     font-display: swap;
     background-color: transparent;
-    color: #ddd;
+    /* color: #ddd;*/
   }
 
   /* body text light grey, extra line spacing */
@@ -25,7 +26,7 @@
   html {
     font-family: 'Open Sans', sans-serif;
     height: 100%;
-    color: #eee;
+    /* color: #eee;*/
     font-family: 'Open Sans', sans-serif;
     line-height: 2;
   }
@@ -41,6 +42,26 @@
 </style>
 
 <body>
+  <!-- Menu -->
+  <div class="w3-top" id="top-menu-bar">
+    <div class="w3-bar w3-theme-l1">
+      <div class="w3-content" style="max-width:920px">
+        <a href="#Top" class="w3-bar-item w3-button">futureplanet.eco</a>
+        <a href="#About" class="w3-bar-item w3-button w3-hide-small w3-right">About</a>
+        <a href="#Technology" class="w3-bar-item w3-button w3-hide-small w3-right">Technology</a>
+        <a href="#Contact" class="w3-bar-item w3-button w3-hide-small w3-right">Contact</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="clickBurger()">&#9776;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu (responsive) -->
+  <div id="burger" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-theme-l1 w3-top" style="margin-top:38px">
+    <a href="#About" class="w3-bar-item w3-button" onClick="clickBurger()">About</a>
+    <a href="#Technology" class="w3-bar-item w3-button" onClick="clickBurger()">Technology</a>
+    <a href="#Contact" class="w3-bar-item w3-button" onClick="clickBurger()">Contact</a>
+  </div>
 
   <!-- The content is limited in width using 'w3-content' -->
   <!-- Default width of w3-content is 960px -->
@@ -49,7 +70,7 @@
 
     <!-- Section: NovoTech -->
 
-    <div class="w3-row-padding">
+    <div class="w3-row-padding" id="About">
       <div class="w3-third w3-container w3-padding-16">
         <h6>NovoTech</h6>
       </div>
@@ -62,7 +83,7 @@
 
     <!-- Section: Technologies -->
 
-    <div class="w3-row-padding">
+    <div class="w3-row-padding" id="Technology">
       <div class="w3-third w3-container w3-padding-16">
         <h6>Technology</h6>
       </div>
@@ -77,7 +98,7 @@
 
     <!-- Section: Contact -->
 
-    <div class="w3-row-padding">
+    <div class="w3-row-padding" id="Contact">
       <div class="w3-third w3-container w3-padding-16">
         <h6>Contact</h6>
       </div>
@@ -101,6 +122,20 @@
         copyright NovoTech AS
       </div>
   </footer>
+
+
+  <!-- BURGER MENU -->
+
+  <script>
+    function clickBurger() {
+      var x = document.getElementById("burger");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
 
 </body>
 
