@@ -1,5 +1,7 @@
 # novo-web
-Draft super-simple landing page for Novo. A minimalistic approach has been chosen. 
+Draft super-simple landing page for Novo. A minimalistic approach has been chosen. Preview here:
+
+https://hdahle.github.io/novo-web/
 
 ### CSS
 Based on w3.css 
