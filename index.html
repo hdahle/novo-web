@@ -3,9 +3,12 @@
 <title>NovoTech - Render the Universe</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- w3.css is unmodofed from w3schools.com -->
 <link rel="stylesheet" href="css/w3.css">
+<!-- colors generated using w3schools color generator -->
 <link rel="stylesheet" href="css/w3-custom-colors.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400&display=swap"
+<!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400&display=swap"
   rel="stylesheet">
 <!-- Font Awesome -->
 <script src="https://kit.fontawesome.com/2acb89f8cb.js" crossorigin="anonymous"></script>
@@ -17,29 +20,23 @@
   h2,
   h3 {
     font-family: 'Open Sans Condensed', sans-serif;
-    font-display: swap;
     font-weight: 300;
-    letter-spacing: 2px;
-    background-color: transparent;
+    letter-spacing: 3px;
   }
 
   .novologo {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 700;
     font-size: large;
-    background-color: transparent;
   }
 
   .footerfont {
     font-family: 'Open Sans Condensed', sans-serif;
-    font-display: swap;
     font-weight: 300;
     letter-spacing: 2px;
-    background-color: transparent;
     font-size: small;
   }
 
-  /* body text light grey, extra line spacing */
   body,
   html {
     font-family: 'Open Sans', sans-serif;
@@ -47,7 +44,6 @@
     line-height: 2;
   }
 
-  /* remove underlines from hyperlinks */
   a {
     text-decoration: none;
   }
@@ -57,14 +53,15 @@
   }
 </style>
 
-
 <body class="w3-theme-d1">
 
   <!-- 3D demo -->
+
   <iframe id="novorender" src="https://staging.novorender.com/explorer/2a8be585bdcd4d5194d727b7814cc86a"
     style="width:100%;height:50vw; border:none;"></iframe>
 
   <!-- Menu -->
+
   <div class="w3-top">
     <!-- For top menu bar to have background color use class="w3-bar w3-theme-d2" -->
     <div class="w3-bar" id="topMenuBar">
@@ -81,35 +78,39 @@
   </div>
 
   <!-- Menu (responsive), add w3-theme-d2 to class for blue background -->
+
   <div id="burger" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:38px">
     <a href="#About" class="w3-bar-item w3-button w3-right w3-theme-d3" onClick="clickBurger()">About</a>
     <a href="#Technology" class="w3-bar-item w3-button w3-theme-d3" onClick="clickBurger()">Technology</a>
     <a href="#Contact" class="w3-bar-item w3-button w3-theme-d3" onClick="clickBurger()">Contact</a>
   </div>
 
+  <!-- Main Page Content Starts Here -->
 
   <div class="w3-content w3-padding-48" style="max-width:900px">
 
     <!-- Section: NovoTech -->
+
     <div class="w3-row w3-padding-24" id="About">
       <div class="w3-third w3-container">
         <h2>The Company</h2>
       </div>
       <div class="w3-rest w3-container">
-        NovoTech is a technology leader in 3D visualization.
+        NovoTech is a Norwegian software company and a technology leader in 3D visualization.
         The NovoRender cloud allows engineering teams to share their advanced 3D-models with employees,
         customers and business partners, regardless of 3D formats and file sizes.
-        By making 3D engineering drawings available to anyone at anytime can dramatically increase the value of existing
+        By making 3D engineering drawings available to anyone at anytime, our customers can dramatically increase the
+        value of existing
         3D models during the development of large projects.
         <div class="w3-margin-top">
           <img src="img/pic-desktop.jpg" alt="NovoTech in use on the desktop"
             style="width:100%;height:10%;border:none;" />
         </div>
-
       </div>
     </div>
 
     <!-- Section: Technologies -->
+
     <div class="w3-row w3-padding-24" id="Technology">
       <div class="w3-third w3-container">
         <h2>The Technology</h2>
@@ -130,11 +131,11 @@
           In addition, access to metadata is enabled, allowing the user to click on and inspect any element in the
           scene.
           No plugins or downloads are required.</p>
-
       </div>
     </div>
 
     <!-- Section: How it works -->
+
     <div class="w3-row w3-padding-24" id="About">
       <div class="w3-third w3-container">
         <h2>How it Works</h2>
@@ -147,6 +148,7 @@
     </div>
 
     <!-- Section: Contact -->
+
     <div class="w3-row w3-padding-24" id="Contact">
       <div class="w3-third w3-container">
         <h2>Contact Us</h2>
@@ -180,6 +182,7 @@
   </div>
 
   <!-- Footer -->
+
   <footer class="w3-center">
     <div class="w3-center w3-padding footerfont">
       &copy; Copyright 2020 NovoTech AS
@@ -188,6 +191,7 @@
 
   <!-- Burger menu handler -->
   <!-- Change navbar style on scroll -->
+
   <script>
     function clickBurger() {
       var x = document.getElementById("burger");
