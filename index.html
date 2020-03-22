@@ -60,12 +60,10 @@
   <iframe id="novorender" src="https://staging.novorender.com/explorer/2a8be585bdcd4d5194d727b7814cc86a"
     style="width:100%;height:50vw; border:none;"></iframe>
 
-  <!-- Menu -->
+  <!-- Menu, using w3-hide* for responsiveness -->
 
   <div class="w3-top">
-    <!-- For top menu bar to have background color use class="w3-bar w3-theme-d2" -->
     <div class="w3-bar" id="topMenuBar">
-      <!-- Menu bar limited width use class="w3-content" style="max-width:900px "-->
       <div>
         <a href="#Top" class="w3-bar-item w3-button novologo">NovoTech</a>
         <a href="#Contact" class="w3-bar-item w3-button w3-hide-small w3-right">Contact</a>
@@ -77,7 +75,7 @@
     </div>
   </div>
 
-  <!-- Menu (responsive), add w3-theme-d2 to class for blue background -->
+  <!-- Menu for small screens <600px -->
 
   <div id="burger" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:38px">
     <a href="#About" class="w3-bar-item w3-button w3-right w3-theme-d3" onClick="clickBurger()">About</a>
