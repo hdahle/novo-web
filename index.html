@@ -10,8 +10,10 @@
 <!-- Google fonts -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400&display=swap"
   rel="stylesheet">
-<!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/2acb89f8cb.js" crossorigin="anonymous"></script>
+<!-- Font Awesome TH -->
+<script src="https://kit.fontawesome.com/85720a3402.js" crossorigin="anonymous"></script>
+<!-- Font Awesome HD -->
+<!-- <script src="https://kit.fontawesome.com/2acb89f8cb.js" crossorigin="anonymous"></script> -->
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
@@ -49,7 +51,7 @@
   }
 
   a:hover {
-    background-color: #5989b6;
+    background-color: #3a6185;
   }
 
   a.arrow:hover {
@@ -64,7 +66,8 @@
   <div class="w3-top">
     <div class="w3-bar w3-theme-d3" id="topMenuBar">
       <div class="w3-content" style="max-width:900px;">
-        <a href="#Top" class="w3-bar-item w3-button novologo">NovoTech</a>
+        <a href="#Top" class="w3-bar-item w3-button novologo"><span style="font-size:large;">
+            <i class="fal fa-dice-d6">&nbsp;&nbsp;</i>NovoTech</span></a>
         <a href="#Contact" class="w3-bar-item w3-button w3-hide-small w3-right">Contact</a>
         <a href="#Technology" class="w3-bar-item w3-button w3-hide-small w3-right">Technology</a>
         <a href="#About" class="w3-bar-item w3-button w3-hide-small w3-right">About</a>
@@ -89,7 +92,7 @@
       style="width:100%;height:90vh; border:none;"></iframe>
     <!-- Down arrow at bottom of page -->
     <div class="w3-display-bottommiddle w3-padding-32 w3-animate-fading">
-      <a href="#About" class="arrow"><span style="font-size: xxx-large;"><i class="fas fa-angle-down"></i></span></a>
+      <a href="#About" class="arrow"><span style="font-size: 400%;"><i class="fal fa-chevron-down"></i></span></a>
     </div>
   </div>
 
@@ -164,17 +167,17 @@
       <div class="w3-rest w3-container">
         <p>
           <a href="mailto:info@novotech.no">
-            <i class="far fa-envelope w3-hover-opacity"></i>&nbsp;&nbsp;
+            <i class="fal fa-envelope w3-hover-opacity"></i>&nbsp;&nbsp;
             info@novotech.no</a>
         </p>
         <p>
           <a href="tel: +4748280270">
-            <i class="fas fa-phone w3-hover-opacity"></i>&nbsp;&nbsp;
+            <i class="fal fa-phone w3-hover-opacity"></i>&nbsp;&nbsp;
             +47 48280270</a>
         </p>
         <p>
           <a href="https://goo.gl/maps/w33r3ebej3tbH2cK7">
-            <i class="fas fa-map-marker-alt w3-hover-opacity"></i>&nbsp;&nbsp;
+            <i class="fal fa-map-marker-alt w3-hover-opacity"></i>&nbsp;&nbsp;
             Gamle Forusveien 11, 4033 Stavanger, Norway</a>
         </p>
         <p><a href="https://www.facebook.com/NovoTechAS/" target="_blank" rel="noreferrer">
@@ -213,6 +216,8 @@
     window.onscroll = function () { navBarOnScroll() };
     function navBarOnScroll() {
       return;
+      // code below replaces navbar-theme when scrolling down
+      // we are not using this functionality now
       var navbar = document.getElementById("topMenuBar");
       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navbar.className = "w3-bar" + " w3-theme-d3";
